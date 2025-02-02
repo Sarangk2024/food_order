@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-i1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Offers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .offers-section {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .offers-section h2 {
+            color: #ff6600;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .offers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .offer {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 280px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin: 10px;
+        }
+
+        .offer img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .offer h3 {
+            color: #ff6600;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .offer p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo_ul">
+                <a href="/"><img src="img/burger_url.webp" alt=""></a>
+                <ul>
+                    <li><a href="corporate.html">Yum Corporate</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="cart.html">Cart <i class="bi bi-book"></i></a></li>
+                    <li><a href="index.php">Sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="offers-section">
+        <h2>Exclusive Food Offers</h2>
+
+        <!-- Offers Container for 3 rows -->
+        <div class="offers-container">
+            <!-- First row -->
+            <div class="offer">
+                <img src="img/Burger-1.png" alt="Cheeseburger Offer">
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>Enjoy our famous Classic Cheeseburger with a Buy 1 Get 1 Free offer! Limited time only.</p>
+            </div>
+            <div class="offer">
+                <img src="img/Burger-2.png" alt="Order Discount">
+                <h3>20% Off on Orders Above $30</h3>
+                <p>Get 20% off when you spend $30 or more on your favorite meals. Don't miss out!</p>
+            </div>
+
+            <!-- Second row -->
+            <div class="offer">
+                <img src="img/Burger-3.png" alt="Family Meal">
+                <h3>Family Meal Deal</h3>
+                <p>Order our Family Meal Combo and save $10. Perfect for sharing with loved ones!</p>
+            </div>
+            <div class="offer">
+                <img src="img/Burger-4.png" alt="Lunch Special">
+                <h3>Lunch Special</h3>
+                <p>Get a combo meal for just $7.99! Available from 11 AM - 2 PM daily.</p>
+            </div>
+
+        
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yum Corporate. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

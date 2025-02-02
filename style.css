@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+body{
+    background-color: #c9daf7;
+    background:linear-gradient(to right,#ce3b16ce,#ffc9dc);
+}
+.container{
+    background:#d4ecb38e;
+    width:450px;
+    padding:1.5rem;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(6, 6, 170, 0.537);
+}
+form{
+    margin:0 2rem;
+}
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+input{
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #aa9c9c;
+    padding-left:1.5rem;
+    font-size:15px;
+}
+.input_group{
+    padding:1% 0;
+    position:relative;
+
+}
+.input_group i{
+    position:absolute;
+    color:rgb(80, 71, 71);
+}
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsla(218, 51%, 63%, 0.914);
+}
+input::placeholder{
+    color:transparent;
+}
+label{
+    color:#594f4f;
+    position:relative;
+    left:1.2em;
+    top:-1.3em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color:hsl(327,90%,28%);
+    font-size:15px;
+}
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+
+}
+.recover a{
+    text-decoration:none;
+    color:rgb(125,125,235);
+}
+.recover a:hover{
+    color:rgb(213, 79, 30);
+    text-decoration:underline;
+}
+.btn{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background:rgb(93, 93, 119);
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
+.btn:hover{
+    background:#31a20f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icon{
+   text-align:center;
+}
+.icon i{
+    color:rgb(236, 118, 15);
+    padding:.5rem 1rem;
+    border-radius:5px;
+    font-size:1rem;
+    cursor:pointer;
+    border:1px solid #dde1e7;
+    margin:0 15px;
+    transition:1s;
+}
+.icon i:hover{
+    background:#0bb3c9;
+    font-size:.1.6rem;
+    border:1px solid rgb(208, 208, 226);
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+button{
+    color:rgb(10, 10, 128);
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+button:hover{
+    text-decoration:underline;
+    color:rgb(37, 80, 211);
+}

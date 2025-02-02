@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'bobblebod';
+    src: url(font/Bobblebod.ttf);
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+header nav {
+    width: 80%; /* Adjust this width as needed */
+    height: 70px;
+    margin: 0 auto; /* Center the nav */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center contents horizontally */
+}
+
+header nav .logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items inside */
+}
+
+header nav .logo_ul img {
+    width: 30px;
+}
+
+header nav .logo_ul ul {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust for spacing */
+}
+
+header nav .logo_ul ul li {
+    list-style: none;
+    padding: 3px 10px;
+    margin-right: 18px;
+}
+
+header nav .logo_ul ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+header nav .logo_ul ul li:nth-last-child(1) {
+    background: #0080006e;
+    border-radius: 10px;
+    padding: 1px 13px;
+}
+
+header nav .logo_ul ul li:nth-last-child(1) a {
+    color: #fff;
+}
+
+header nav .logo_ul ul li:nth-last-child(1) a i {
+    margin-left: 5px;
+}
+
+header nav .logo_ul ul li a:hover {
+    color: rgb(0, 0, 0, .2);
+}
+
+header nav .contact_select {
+    display: flex;
+    align-items: center;
+}
+
+header nav .contact_select li {
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+header nav .contact_select li a {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+header nav .contact_select li:nth-child(2) {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2px 13px 1px 13px;
+    width: 100px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+/* Section Start */
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+section .content,
+.img_bx {
+    position: relative;
+    width: 40%;
+    padding: 10px;
+}
+
+section .img_bx {
+    width: 60%;
+}
+
+section .content h5 {
+    background: #f04417;
+    display: unset;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+section .content h1 {
+    margin-top: 5px;
+    font-family: 'bobblebod';
+    font-size: 65px;
+    line-height: 55px;
+    letter-spacing: -2px;
+}
+
+section .content .spicy_icon {
+    margin-top: 12px;
+}
+
+section .content p {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 12px;
+}
+
+section .content h6 {
+    margin-top: 20px;
+    color: gray;
+}
+
+section .content .ing_icon {
+    display: flex;
+    align-items: center;
+}
+
+section .content .ing_icon img {
+    margin-right: 9px;
+}
+
+section .content .ing_icon h6 {
+    background-color: #00a950;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px 10px;
+    position: relative;
+    top: -10px;
+}
+
+section .content .order_rate {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+section .content .order_rate a {
+    background: #000;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "bobblebod";
+    transition: .3s linear;
+}
+
+section .content .order_rate a:hover {
+    background: #00a950;
+}
+
+section .content .order_rate h2 {
+    margin-left: 30px;
+    color: #00a950;
+    font-size: 30px;
+    font-family: 900;
+}
+
+section .content .order_rate h2 sup {
+    margin-left: 5px;
+    color: #a3ca72;
+    font-size: 16px;
+    font-weight: 900;
+    position: relative;
+    top: -5px;
+}
+
+section .content .food_slider {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+section .content .food_slider::-webkit-scrollbar {
+    display: none;
+}
+
+section .content .food_slider img {
+    width: 45px;
+    height: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: .3;
+    transition: .3s linear;
+}
+
+section .content .food_slider img:nth-child(1) {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+section .content .food_slider img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+section .img_bx .images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    margin-top: 50px;
+}
+
+section .img_bx .images::-webkit-scrollbar {
+    display: none;
+}
+
+section .img_bx .images img {
+    width: 35%;
+    margin-right: 50px;
+    filter: blur(1.5px);
+    transition: .3s linear;
+}
+
+section .img_bx .images img:nth-child(1) {
+    width: 60%;
+    filter: blur(0px);
+}
+
+section .img_bx .slide_btns {
+    position: absolute;
+    bottom: 10px;
+    left: 20.5%;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .img_bx .slide_btns i {
+    background: #ff8e27;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+section .img_bx .burger_badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10%;
+    right: 22%;
+    z-index: 99999;
+}
+
+section .img_bx .burger_badge .badge_card {
+    width: 70px;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .05);
+    margin-right: 5px;
+    border-radius: 5px 5px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .img_bx .burger_badge .badge_card p {
+    color: gray;
+    font-size: 11px;
+}
+
+section .img_bx .burger_badge .badge_card h5 {
+    color: #f04417;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+/* Define keyframes for the left-to-right animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start from the left */
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Apply the animation to both images and menu details */
+.menu-item {
+    display: flex; /* Use flex to align image and details side by side */
+    align-items: center; /* Center vertically */
+    opacity: 0; /* Ensure they start invisible */
+    animation: slideIn 0.5s ease forwards; /* Animation for the images and details */
+}
+
+/* Style for menu details to animate individually */
+.menu-details {
+    animation: slideIn 0.5s ease forwards; /* Animation for menu details */
+    opacity: 0; /* Start invisible */
+    margin-left: 20px; /* Space between image and text */
+}
+
+
+
+
+
+
+
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    flex: 1; /* Allow main to grow and fill space */
+}
+
+h2 {
+    color: #333;
+}
+
+/* Animated Text Section */
+.about-section {
+    text-align: center;
+    margin: 50px 20px; /* Added horizontal margins */
+}
+
+.animate-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff6600;
+    opacity: 0; /* Start with hidden text */
+    position: relative; /* Allow animation to control its position */
+    animation: slideDown 2s forwards; /* Apply animation */
+}
+
+/* Keyframe animation for text */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        top: -100px; /* Start above the screen */
+    }
+    100% {
+        opacity: 1;
+        top: 0; /* End at its original position */
+    }
+}
+
+/* About Paragraph Animation */
+.about-paragraph {
+    opacity: 0; /* Start with hidden text */
+    animation: slideIn 0.75s forwards 0.5s; /* Faster animation with delay */
+    margin: 0 15%; /* Set left and right margins for better spacing */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Keyframe animation for about paragraph */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start above the original position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at its original position */
+    }
+}
+
+/* Mission and Vision Section Styling */
+.mission-vision-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Mission Section Styling */
+#mission {
+    text-align: center; /* Center align the section */
+    margin-top: 60px; /* Increased space above the mission section */
+}
+
+.mission-content {
+    margin: 0 15%; /* Set left and right margins */
+    line-height: 1.6; /* Increase line height for readability */
+    opacity: 0; /* Start with hidden text */
+    animation: slideInRight 1s forwards; /* Animation from right */
+}
+
+/* Keyframe animation for mission paragraph from right */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* Start from the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at its original position */
+    }
+}
+
+/* Values Section Styling */
+#values {
+    text-align: center; /* Center align the section */
+    margin-top: 80px; /* Increased space above the values section */
+}
+
+.values-content {
+    margin: 0 15%; /* Set left and right margins */
+    line-height: 1.6; /* Increase line height for readability */
+    opacity: 0; /* Start with hidden text */
+    animation: slideInLeft 0.75s forwards; /* Faster animation from left */
+}
+
+/* Keyframe animation for values paragraph from left */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* Start from the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at its original position */
+    }
+}
+
+/* Vision Section Styling */
+#vision {
+    text-align: center; /* Center align the section */
+    margin-top: 80px; /* Increased space above the vision section */
+}
+
+.vision-content {
+    margin: 0 15%; /* Set left and right margins */
+    line-height: 1.6; /* Increase line height for readability */
+    opacity: 0; /* Start with hidden text */
+    animation: slideInRight 0.75s forwards; /* Faster animation from right */
+}
+
+/* Buttons Section */
+.buttons-section {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin: 20px 0; /* Space around the button section */
+}
+
+.rounded-button {
+    background-color: #FF6600; /* Button color matching the theme */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Increased corner radius */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.rounded-button:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent footer */
+    color: white;
+}

@@ -1,0 +1,157 @@
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    flex: 1; /* Allow main to grow and fill space */
+}
+
+h2 {
+    color: #333;
+}
+
+/* Animated Text Section */
+.about-section {
+    text-align: center;
+    margin: 50px 20px; /* Added horizontal margins */
+}
+
+.animate-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff6600;
+    opacity: 0; /* Start with hidden text */
+    position: relative; /* Allow animation to control its position */
+    animation: slideDown 2s forwards; /* Apply animation */
+}
+
+/* Keyframe animation for text */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        top: -100px; /* Start above the screen */
+    }
+    100% {
+        opacity: 1;
+        top: 0; /* End at its original position */
+    }
+}
+
+/* About Paragraph Animation */
+.about-paragraph {
+    opacity: 0; /* Start with hidden text */
+    animation: slideIn 0.75s forwards 0.5s; /* Faster animation with delay */
+    margin: 0 15%; /* Set left and right margins for better spacing */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Keyframe animation for about paragraph */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start above the original position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at its original position */
+    }
+}
+
+/* Mission and Vision Section Styling */
+.mission-vision-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Mission Section Styling */
+#mission {
+    text-align: center; /* Center align the section */
+    margin-top: 60px; /* Increased space above the mission section */
+}
+
+.mission-content {
+    margin: 0 15%; /* Set left and right margins */
+    line-height: 1.6; /* Increase line height for readability */
+    opacity: 0; /* Start with hidden text */
+    animation: slideInRight 1s forwards; /* Animation from right */
+}
+
+/* Keyframe animation for mission paragraph from right */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* Start from the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at its original position */
+    }
+}
+
+/* Values Section Styling */
+#values {
+    text-align: center; /* Center align the section */
+    margin-top: 80px; /* Increased space above the values section */
+}
+
+.values-content {
+    margin: 0 15%; /* Set left and right margins */
+    line-height: 1.6; /* Increase line height for readability */
+    opacity: 0; /* Start with hidden text */
+    animation: slideInLeft 0.75s forwards; /* Faster animation from left */
+}
+
+/* Keyframe animation for values paragraph from left */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* Start from the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at its original position */
+    }
+}
+
+/* Vision Section Styling */
+#vision {
+    text-align: center; /* Center align the section */
+    margin-top: 80px; /* Increased space above the vision section */
+}
+
+.vision-content {
+    margin: 0 15%; /* Set left and right margins */
+    line-height: 1.6; /* Increase line height for readability */
+    opacity: 0; /* Start with hidden text */
+    animation: slideInRight 0.75s forwards; /* Faster animation from right */
+}
+
+/* Buttons Section */
+.buttons-section {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin: 20px 0; /* Space around the button section */
+}
+
+.rounded-button {
+    background-color: #FF6600; /* Button color matching the theme */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Increased corner radius */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.rounded-button:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent footer */
+    color: white;
+}
